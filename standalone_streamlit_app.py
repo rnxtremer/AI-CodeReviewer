@@ -124,10 +124,11 @@ if st.button("Get Code Review"):
                     f"You are a highly skilled code reviewer. Review the following {language} code and provide suggestions, optimizations, "
                     f"and best practices. Format the response using markdown for clarity.\n\n"
                     f"### Code:\n```{language}\n{code}\n```\n\n### Review:"
+                    f"do not use heading Code Review "
                 )
 
                 # Generate review using Gemini
-                model = genai.GenerativeModel("gemini-pro")
+                model = genai.GenerativeModel("gemini-1.5-pro")
                 response = model.generate_content(prompt)
 
                 if response and hasattr(response, "text"):

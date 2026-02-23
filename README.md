@@ -29,7 +29,7 @@ Code Reviewer AI is an advanced code review and optimization tool powered by Goo
 ```
 ├── standalone_streamlit_app.py   # Standalone Streamlit app (no Flask required)
 ├── streamlit_app.py              # Streamlit app with Flask(app.py)
-├── app.py                        # Flask backend (used by streamlit_with_flask.py)
+├── app.py                        # Flask backend (used by streamlit_app.py)
 ├── README.md                     # Project documentation
 ├── requirements.txt              # Dependencies
               
